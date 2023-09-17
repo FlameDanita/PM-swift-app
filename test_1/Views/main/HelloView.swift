@@ -345,10 +345,119 @@ struct ViewStats: View {
 // третий экран
 struct ViewSetting: View {
     var body: some View {
-        ScrollView {
-            Text("Разработчики")
-                .font(.title)
-            Divider()
+        Text("Разработчики")
+            .font(.title)
+        Divider()
+        ScrollView{
+            VStack{
+                HStack{
+                    Spacer()
+                    Image("dev_Danita").cornerRadius(50)
+                    Spacer()
+                    VStack{
+                        Text("Широкопетлев Никита").bold()
+                        Text("Разработчик")
+                    }
+                    Spacer()
+                }
+                Divider()
+                HStack{
+                    Spacer()
+                    VStack{
+                        Text("Дарья Поликарпова").bold()
+                        Text("Менеджер по продвижению")
+                    }
+                    Spacer()
+                    Image("dev_Dasha").cornerRadius(50)
+                    Spacer()
+                }
+            }
+            VStack{
+                Divider()
+                HStack{
+                    Spacer()
+                    Image("dev_Nikita").cornerRadius(50)
+                    Spacer()
+                    VStack{
+                        Text("Яновский Никита").bold()
+                        Text("Тим-лидер")
+                    }
+                    Spacer()
+                }
+                Divider()
+                HStack{
+                    Spacer()
+                    VStack{
+                        Text("Незвоненко Карина").bold()
+                        Text("Спонсор")
+                    }
+                    Spacer()
+                    Image("dev_Karina").cornerRadius(50)
+                    Spacer()
+                }
+            }
+            VStack{
+                Divider()
+                HStack{
+                    Spacer()
+                    Image("dev_Artem").cornerRadius(50)
+                    Spacer()
+                    VStack{
+                        Text("Устинов Артем").bold()
+                        Text("Тайм-киппер")
+                    }
+                    Spacer()
+                }
+                Divider()
+                HStack{
+                    Spacer()
+                    VStack{
+                        Text("Меньшина Олеся").bold()
+                        Text("Молодой специалист")
+                    }
+                    Spacer()
+                    Image("dev_Lesia").cornerRadius(50)
+                    Spacer()
+                }
+            }
+            VStack{
+                Divider()
+                HStack{
+                    Spacer()
+                    Image("dev_Feduc").cornerRadius(50)
+                    Spacer()
+                    VStack{
+                        Text("Сметанин Федор").bold()
+                        Text("Бригадир")
+                    }
+                    Spacer()
+                }
+                Divider()
+                HStack{
+                    Spacer()
+                    VStack{
+                        Text("Полякова Света").bold()
+                        Text("Генератор идей")
+                    }
+                    Spacer()
+                    Image("dev_Sveta").cornerRadius(50)
+                    Spacer()
+                }
+                
+            }
+            VStack{
+                Divider()
+                HStack{
+                    Spacer()
+                    Image("dev_Max").cornerRadius(50)
+                    Spacer()
+                    VStack{
+                        Text("Максим Козачок").bold()
+                        Text("Искатель")
+                    }
+                    Spacer()
+                }
+            }
         }
         Divider()
         Spacer().frame(height: 30)
