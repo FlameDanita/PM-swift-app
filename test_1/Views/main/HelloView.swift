@@ -40,9 +40,74 @@ struct HelloView: View {
 struct ViewMain: View {
     var body: some View {
             VStack{
-                Spacer().frame(height: 150)
-                Image("Карьерные сервисы").imageScale(.small)
-                Spacer().frame(height: 350)
+                ScrollView{
+                    Spacer().frame(height: 30)
+                    HStack{
+                        Text("Новости")
+                            .font(.title2)
+                            .multilineTextAlignment(.leading)
+                            .padding(.leading, 20.0)
+                        Spacer()
+                    }
+                    VStack{
+                        Spacer()
+                        Image("Интерн-пикник").imageScale(.small).cornerRadius(15)
+                        HStack{
+                            Text("Прошло главное молодежное карьерное")
+                                .padding(.leading, 20.0)
+                            Spacer()
+                        }
+                        HStack{
+                            Text("мероприятие этого года — Интерн пикник!")
+                                .padding(.leading, 20.0)
+                            Spacer()
+                        }
+                        Text("14 дней назад")
+                            .font(.subheadline)
+                        Spacer()
+                    }
+                    VStack{
+                        Spacer()
+                        Image("Форум").imageScale(.small).cornerRadius(15)
+                        HStack{
+                            Text("В Правительстве Москвы успешно прошел")
+                                .padding(.leading, 20.0)
+                            Spacer()
+                        }
+                        HStack{
+                            Text("молодежный форум «Твой город - твое дело»")
+                                .padding(.leading, 20.0)
+                            Spacer()
+                        }
+                        Text("Сегодня")
+                            .font(.subheadline)
+                        Spacer()
+                    }
+                    VStack{
+                        Spacer()
+                        Image("Выборы мэра").imageScale(.small).cornerRadius(15)
+                        HStack{
+                            Text("В Москве прошли выборы мэра").padding(.leading, 20.0)
+                            Spacer()
+                        }
+
+                        Text("7 дней назад")
+                            .font(.subheadline)
+                        Spacer()
+                    }
+                    VStack{
+                        Spacer()
+                        Image("Команда").imageScale(.small).cornerRadius(15)
+                        HStack{
+                            Text("Команда №1, люблю вас <3")
+                        }
+                        Text("Всегда")
+                            .font(.subheadline)
+                        Spacer()
+                    }
+                    //                Image("Карьерные сервисы").imageScale(.small)
+                    Spacer().frame(height: 50)
+                }
                 Divider()
                 Spacer().frame(height: 30)
                 HStack {
