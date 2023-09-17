@@ -20,9 +20,9 @@ struct HelloView: View {
                         Divider()
                         Spacer().frame(height: 100)
                         Text("Начать")
-                            .font(.callout)
-                            .fontWeight(.heavy)
-                            .foregroundColor(Color.black)
+                        .font(.title2)
+                        .fontWeight(.regular)
+                        .foregroundColor(Color.pink)
                             .multilineTextAlignment(.center)
                             .lineLimit(10)
                             .padding(.top, 100.0)
@@ -42,7 +42,7 @@ struct ViewMain: View {
             VStack{
                 Spacer().frame(height: 150)
                 Image("Карьерные сервисы").imageScale(.small)
-                Spacer().frame(height: 400)
+                Spacer().frame(height: 350)
                 Divider()
                 Spacer().frame(height: 30)
                 HStack {
@@ -263,6 +263,58 @@ struct ViewStats: View {
                 }
                 Spacer().frame(height: 5)
             }
+            HStack{
+                Spacer().frame(height: 5)
+                VStack{
+                    Image("gift_5").imageScale(.small).cornerRadius(20)
+                    HStack{
+                        Image("coin")
+                        Text("6000")
+                            .font(.subheadline)
+                    }
+                }
+                VStack{
+                    Image("gift_6").imageScale(.small).cornerRadius(20)
+                    HStack{
+                        Image("coin")
+                        Text("15000")
+                            .font(.subheadline)
+                    }
+                }
+                Spacer().frame(height: 5)
+            }
+            HStack{
+                Spacer().frame(height: 5)
+                VStack{
+                    Image("gift_7").imageScale(.small).cornerRadius(20)
+                    HStack{
+                        Image("coin")
+                        Text("2000")
+                            .font(.subheadline)
+                    }
+                }
+                VStack{
+                    Image("gift_8").imageScale(.small).cornerRadius(20)
+                    HStack{
+                        Image("coin")
+                        Text("8000")
+                            .font(.subheadline)
+                    }
+                }
+                Spacer().frame(height: 5)
+            }
+            HStack{
+                Spacer().frame(height: 5)
+                VStack{
+                    Image("gift_9").imageScale(.small).cornerRadius(20)
+                    HStack{
+                        Image("coin")
+                        Text("500")
+                            .font(.subheadline)
+                    }
+                }
+                Spacer().frame(height: 5)
+            }
         }
         Divider()
         Spacer().frame(height: 30)
@@ -294,7 +346,7 @@ struct ViewStats: View {
 struct ViewSetting: View {
     var body: some View {
         ScrollView {
-            Text("Настройки")
+            Text("Разработчики")
                 .font(.title)
             Divider()
         }
